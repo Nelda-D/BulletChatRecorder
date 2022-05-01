@@ -40,7 +40,6 @@ class DanmuBiliMsgRecorder(val roomId: Long) : BaseBiliProcesser() {
             val ft = SimpleDateFormat("yyyy-MM-dd hh-mm-ss")
             val time = ft.format(Date())
             val curDir = System.getProperty("user.dir")
-            println("你当前的工作目录为 :$curDir")
             val filePath = "$curDir\\LiveData\\"
             val fileName = "$roomId-${time}.txt"
             println("Write file: $filePath$fileName")
